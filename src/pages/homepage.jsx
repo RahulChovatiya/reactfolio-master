@@ -22,6 +22,8 @@ import SEO from "../data/seo";
 import myArticles from "../data/articles";
 
 import "./styles/homepage.css";
+import AboutHome from "./aboutHome";
+import HomeAllProjects from "../components/projects/homeAllProject";
 // import About from "./about";
 
 const Homepage = () => {
@@ -105,7 +107,7 @@ const Homepage = () => {
 								<div className="homepage-image-container">
 									<div className="homepage-image-wrapper">
 										<img
-											src="homepage.jpg"
+											src="homesvg.svg"
 											alt="about"
 											className="homepage-image"
 										/>
@@ -166,9 +168,12 @@ const Homepage = () => {
 								/>
 							</a>
 						</div>
-
+						{/* About */}
+						<div>
+							<AboutHome />
+						</div>
 						<div className="homepage-projects">
-							<AllProjects />
+							<HomeAllProjects />
 						</div>
 
 						<div className="homepage-after-title">
